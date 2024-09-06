@@ -75,44 +75,27 @@ Approve the NFTs for transfer and deposit them to the Polygon Amoy testnet using
 npx hardhat run scripts/approve-deposit.js --network sepolia
 ```
 
-### Step 6: Verify Balance on Polygon
+### Step 6: Verify Balance on amoy 
 
 After bridging, verify the NFT balance on the Polygon network using the **`balanceOf.js`** script. Ensure you replace the `tokenAddress` and `walletAddress` with the correct addresses. Run the script:
 
 ```bash
-npx hardhat run scripts/balanceOf.js --network polygon
+npx hardhat run scripts/balanceOf.js --network amoy
 ```
+### License
 
-## Additional Notes
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- **ERC721A**: This standard is used for optimized batch minting and reduces gas costs compared to the traditional ERC721 standard.
-- **FxPortal Bridge**: The FxPortal bridge facilitates seamless transfer of NFTs from Ethereum to Polygon, enabling interoperability between networks.
-- **IPFS and Pinata**: Ensure your Pinata account is active and properly set up to store and retrieve IPFS content.
+### Authors
 
-## Troubleshooting
+Sujal Mahajan
 
-- **Deployment Errors**: Ensure you have sufficient Sepolia ETH and Polygon MATIC (Amoy testnet) tokens.
-- **Minting Errors**: Double-check that the IPFS URIs and metadata are correctly formatted.
-- **Bridging Errors**: Verify that all contract addresses are accurate and the FxPortal bridge setup is correctly configured.
+### Contributing
 
-## Authors
-
-- **[Your Name]** - *Initial work* - [Your Profile](https://github.com/yourusername)
-
-See also the list of [contributors](https://github.com/yourusername/PolyMod1-NFT-Project/graphs/contributors) who participated in this project.
-
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Create a new Pull Request.
+Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## Conclusion
 
 This project demonstrates the deployment, minting, and bridging of NFTs from Ethereum to Polygon using Hardhat, FxPortal, and modern NFT standards. Feel free to customize and extend the project further to fit additional requirements.
 
----
 
-This README now includes the **Authors** and **Contributing** sections, similar to the format in your previous example. Be sure to replace placeholder information with actual details relevant to your project.
